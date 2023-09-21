@@ -12,7 +12,7 @@ button {
 
 
 body {
-    background: url("./assets/images/");
+    background-color: moccasin;
     display: flex;
     align-items: center;
     justify-content: center;
