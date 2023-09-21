@@ -4,10 +4,15 @@
     font-family: 'Inter', sans-serif;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 
 body {
-    background-color: #FEE58F;
+    background: url("./assets/images/");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,4 +24,104 @@ body {
     height: 926px;
     border-radius: 70px;
     background-color: #FDF8F8;
+    padding: 58px 15px;
+}
+
+.player__header {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.player__cover {
+    margin-top: 58px;
+    width: 100%;
+}
+
+.player__cover img {
+    width: 100%;
+}
+
+
+.player__audio {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 13px 15px;
+    color: white;
+}
+
+.player__info__name {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: SF Pro, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+}
+
+.player__info__author {
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+    font-family: SF Pro, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.player__audio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    margin-top: 29px;
+    padding: 13px 18px;
+}
+
+.timeline__wrapper {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.timeline {
+    width: 100%;
+    background-color: rgba(1, 1, 1, .4);
+    height: 7px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 7px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.current {
+    text-align: left;
+}
+
+.length {
+    text-align: right;
+}
+
+.toggle_play__container {
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+}
+
+.toggle_play__container .next {
+    transform: rotate(180deg);
 }
