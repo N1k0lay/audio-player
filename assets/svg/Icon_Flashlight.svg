@@ -1,0 +1,10 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon Flashlight">
+<circle id="Ellipse 3" cx="25" cy="25" r="25" fill="black" fill-opacity="0.4"/>
+<g id="Lighning">
+<path d="M20 13V14.5H30V13H20Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 15.5V17.5L22.5 21.5V37.5C22.5 38.0523 22.9477 38.5 23.5 38.5H26.5C27.0523 38.5 27.5 38.0523 27.5 37.5V21.5L30 17.5V15.5H20ZM23.5 24.5V27.5C23.5 28.3284 24.1716 29 25 29C25.8284 29 26.5 28.3284 26.5 27.5V24.5C26.5 23.6716 25.8284 23 25 23C24.1716 23 23.5 23.6716 23.5 24.5Z" fill="white"/>
+<path d="M26 27C26 27.5523 25.5523 28 25 28C24.4477 28 24 27.5523 24 27C24 26.4477 24.4477 26 25 26C25.5523 26 26 26.4477 26 27Z" fill="white"/>
+</g>
+</g>
+</svg>
