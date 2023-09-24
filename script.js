@@ -110,9 +110,9 @@ function player(playList) {
 
         audio.src = song.src;
         audio.currentTime = 0;
+        let src = location.hostname === 'localhost' ?  'http://localhost:63342/' : 'https://n1k0lay.github.io/audio-player/';
 
-        // From remote host
-        jsmediatags.read('http://localhost:63342/' + song.src, {
+        jsmediatags.read(src + song.src, {
             onSuccess: function(result) {
                 const { data, format } = result.tags.picture;
                 let base64String = "";
