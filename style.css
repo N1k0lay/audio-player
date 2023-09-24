@@ -10,14 +10,13 @@ button {
     cursor: pointer;
 }
 
-
-
 body {
     background-color: moccasin;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .d_none {
