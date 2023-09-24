@@ -3,6 +3,7 @@ fetch('./playlist.json')
     .then(data => player(data));
 
 function player(playList) {
+    let jsmediatags = window.jsmediatags;
     let activeSong = 0;
     const audioPlayer = document.querySelector('#player__audio');
     const audio = new Audio();
@@ -107,12 +108,27 @@ function player(playList) {
         const playerCover = document.querySelector('.player__cover').querySelector('img');
         const wallpaper = document.querySelector('.phone__wallpaper');
 
-        playerInfoName.innerHTML = song.name;
-        playerInfoAuthor.innerHTML = song.author;
-        playerCover.src = song.cover;
         audio.src = song.src;
         audio.currentTime = 0;
-        wallpaper.style.background = `url("${song.cover}")`
+
+        // From remote host
+        jsmediatags.read('http://localhost:63342/' + song.src, {
+            onSuccess: function(result) {
+                const { data, format } = result.tags.picture;
+                let base64String = "";
+                for (let i = 0; i < data.length; i++) {
+                    base64String += String.fromCharCode(data[i]);
+                }
+                playerInfoName.textContent = result.tags.title;
+                playerInfoAuthor.textContent = result.tags.artist;
+
+                playerCover.src = `data:${data.format};base64,${window.btoa(base64String)}`;
+                wallpaper.style.background = `url("data:${data.format};base64,${window.btoa(base64String)}")`
+            },
+            onError: function(error) {
+                console.log(error);
+            }
+        });
 
 
         audio.addEventListener('loadeddata', () => {
@@ -127,4 +143,6 @@ function player(playList) {
 
     }
     render(playList[0]);
+
+
 }
