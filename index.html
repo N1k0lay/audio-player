@@ -9,30 +9,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-<div class="player__wrapper">
-    <div class="player__header">Chill Player</div>
-    <div class="player__cover"><img src="./assets/images/image%201.png" alt="cover"></div>
-
-    <div id="player__audio" class="player__audio">
-        <div class="player__info">
-            <div class="player__info__name">Episode 1 - Introduction</div>
-            <div class="player__info__author">HEADSPACE</div>
-        </div>
-        <div class="timeline__wrapper">
-            <div class="current"></div>
-            <div class="timeline">
-                <div class="progress"></div>
+<div class="phone__wrapper">
+    <div class="phone__volume">
+        <div class="volume__button up"></div>
+        <div class="volume__button down"></div>
+    </div>
+    <div class="phone">
+        <div class="phone__top">
+            <div class="player__header">Chill Player</div>
+            <div class="phone__clock">
+                <div class="phone__clock__date">
+                    Sunday, 14 May
+                </div>
+                <div class="phone__clock__time">11:11</div>
             </div>
-            <div class="length"></div>
         </div>
-        <div class="toggle_play__container">
-            <button><img class="prev" src="./assets/svg/controller.svg" alt="prev"></button>
-            <button class="toggle_play play"><img class="play" src="./assets/svg/play.svg" alt="play"></button>
-            <button><img class="next" src="./assets/svg/controller.svg" alt="next"></button>
+        <div class="phone__bottom">
+            <div class="player__cover"><img src="./assets/images/image%201.png" alt="cover"></div>
+            <div id="player__audio" class="player__audio">
+                <div class="player__info">
+                    <div class="player__info__name">Episode 1 - Introduction</div>
+                    <div class="player__info__author">HEADSPACE</div>
+                </div>
+                <div class="timeline__wrapper">
+                    <div class="current"></div>
+                    <div class="timeline">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="length"></div>
+                </div>
+                <div class="toggle_play__container">
+                    <button><img class="prev" src="./assets/svg/controller.svg" alt="prev"></button>
+                    <button class="toggle_play play"><img class="play" src="./assets/svg/play.svg" alt="play"></button>
+                    <button><img class="next" src="./assets/svg/controller.svg" alt="next"></button>
+                </div>
+            </div>
+            <div class="phone__buttons">
+                <button><img src="./assets/svg/Icon_Flashlight.svg" alt="Icon_Flashlight"></button>
+                <button><img src="./assets/svg/Icon_Camera.svg" alt="Icon_Camera"></button>
+            </div>
         </div>
+
 
     </div>
 </div>

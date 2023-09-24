@@ -19,12 +19,59 @@ body {
     min-height: 100vh;
 }
 
-.player__wrapper {
+.phone__wrapper {
+    position: relative;
+}
+
+.phone {
     width: 428px;
-    height: 926px;
+    height: 852px;
     border-radius: 70px;
-    background-color: #FDF8F8;
+    background-color: #3f3f3f;
     padding: 58px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phone__volume {
+    position: absolute;
+    top: 190px;
+    left: -8px;
+}
+
+
+.phone__clock {
+    .phone__clock__date {
+        color: rgba(255, 255, 255, 0.80);
+        text-align: center;
+        font-family: SF Pro Display, serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .phone__clock__time {
+        color: rgba(255, 255, 255, 0.80);
+        text-align: center;
+        font-family: SF Compact Rounded, serif;
+        font-size: 108px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.volume__button {
+    width: 30px;
+    height: 65px;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 10px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .player__header {
@@ -37,11 +84,12 @@ body {
 }
 
 .player__cover {
-    margin-top: 58px;
-    width: 100%;
+    padding: 10px 15px;
 }
 
 .player__cover img {
+    border-radius: 8px;
+    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.25);
     width: 100%;
 }
 
@@ -49,8 +97,14 @@ body {
 .player__audio {
     background-color: rgba(0, 0, 0, .5);
     border-radius: 20px;
-    padding: 13px 15px;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    margin-top: 19px;
+    padding: 13px 18px;
+
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
 }
 
 .player__info__name {
@@ -73,12 +127,6 @@ body {
     line-height: normal;
 }
 
-.player__audio {
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    margin-top: 29px;
-    padding: 13px 18px;
-}
 
 .timeline__wrapper {
     display: grid;
@@ -124,4 +172,12 @@ body {
 
 .toggle_play__container .next {
     transform: rotate(180deg);
+}
+
+.phone__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 31px 0;
+
 }
