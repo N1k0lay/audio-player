@@ -11,12 +11,17 @@ button {
 }
 
 
+
 body {
     background-color: moccasin;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+.d_none {
+    display: none;
 }
 
 .phone__wrapper {
@@ -33,6 +38,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.phone * {
+    z-index: 999;
+}
+
+.phone__wallpaper {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    width: 300%;
+    height: 300%;
+    transform: rotate(17.588deg);
+    align-items: center;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.25);
+    filter: blur(36px);
+    background: url('./assets/images/61 - Travis Scott,HVME - Goosebumps - Remix.jpeg');
+    opacity: .95;
+    z-index: 3;
+    transition: all 500ms linear;
 }
 
 .phone__volume {
@@ -162,6 +189,11 @@ body {
 
 .length {
     text-align: right;
+}
+
+.toggle_play {
+    height: 32px;
+    width: 32px;
 }
 
 .toggle_play__container {

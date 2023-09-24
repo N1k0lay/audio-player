@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Goosebumps - Remix",
+    "author": "Travis Scott,HVME",
+    "src": "./assets/audio/61%20-%20Travis%20Scott,HVME%20-%20Goosebumps%20-%20Remix.mp3",
+    "cover": "./assets/images/61%20-%20Travis%20Scott,HVME%20-%20Goosebumps%20-%20Remix.jpeg"
+  },
+  {
+    "name": "Малиновый закат (Remix)",
+    "author": "LANX,ANAMUN",
+    "src": "./assets/audio/LVNX,ANAMUN%20-%20Малиновый%20закат%20(Remix).mp3",
+    "cover": "./assets/images/image%201.png"
+  },
+  {
+    "name": "track3",
+    "author": "author3",
+    "src": "./assets/audio/61%20-%20Travis%20Scott,HVME%20-%20Goosebumps%20-%20Remix.mp3",
+    "cover": "./assets/images/image%201.png"
+  },
+  {
+    "name": "track4",
+    "author": "author4",
+    "src": "./assets/audio/61%20-%20Travis%20Scott,HVME%20-%20Goosebumps%20-%20Remix.mp3",
+    "cover": "./assets/images/image%201.png"
+  },
+  {
+    "name": "track5",
+    "author": "author5",
+    "src": "./assets/audio/61%20-%20Travis%20Scott,HVME%20-%20Goosebumps%20-%20Remix.mp3",
+    "cover": "./assets/images/image%201.png"
+  }
+]
